@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>LOGIN FORM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        body
+        {
+            border: solid 1px black;
+            width: 40%;
+            margin-left: 30%;
+        }
+        .background
+        {
+            background-color: green;
+        }
+        .s1
+        {
+            margin-right: 60%;
+        }
+        .s2
+        {
+            margin-right: 52%;
+        }
+        .s3
+        {
+            margin-right: 60%;
+        }
+        .nm
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+        .em
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+        .pn
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+        .nm
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+        .add
+        {
+            background-color: rgb(184, 238, 104);
+            height: 75px;
+            padding: 5px;
+        }
+        .a1
+        {
+            float: left;
+            margin-left: 135px;
+        }
+        .a2
+        {
+            float: left;
+            width: 60%;
+            margin-top: -18px;
+            margin-left: 150px;
+        }
+        .a2 input[type="text"]
+        {
+            font-size: large;
+            width: 60%;
+            height: 70px;
+        }
+        .pd
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+        .cn
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+        .ct
+        {
+            background-color: rgb(184, 238, 104);
+            height: 40px;
+            padding: 8px;
+        }
+        #visa
+        {
+            height: 23px;
+            width: auto;
+        }
+        #AmEx
+        {
+            height: 23px;
+            width: auto;
+        }
+        #Mastercard
+        {
+            height: 23px;
+            width: auto;
+        }
+        .cno
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+        .sc
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+        .nc
+        {
+            background-color: rgb(184, 238, 104);
+            height: 20px;
+            padding: 8px;
+        }
+
+    </style>
+</head>
+<body>
+    <center>   
+    <h1> <b> <u> PHP ASSIGNMENT </u> </b> </h1>
+    <div class="background">
+     <div class="s1">   
+        <br>
+    <h2> Step 1: Your details </h2>
+    </div>
+    <form method="post">
+        <div class="nm">
+        NAME : <input type="text" name="name" placeholder="First and last name" required></div>
+        <br>
+        <div class="em">
+        EMAIL : <input type="text" name="email" placeholder="Example@domain.com" required></div>
+        <br>
+        <div class="pn">
+        PHONE : <input type="text" name="phone" placeholder="Eg +91 8980110081" required></div>     
+        <div class="s2">       
+    <h2> Step 2: Delivery address </h2>
+        </div>
+        <div class="add">
+        <div class="a1"> Address : </div> <div class="a2"> <input type="text" name="address"> </div> 
+        </div>
+        <br>
+        <div class="pd">
+        post code : <input type="text" name="postcode"></div>
+        <br> 
+        <div class="cn">
+        country : <input type="text" name="country"></div>
+        <div class="s3">
+    <h2> Step 3: Card details </h2>
+        </div>
+        <div class="ct">
+        Card type <br>
+        <input type="radio" name="R1"><img id="visa" src="images/visa.png"> VISA 
+        <input type="radio" name="R1"><img id="AmEx" src="images/AmEx.png"> AmEx 
+        <input type="radio" name="R1"> <img id="Mastercard" src="images/mastercard.png"> MasterCard </div> 
+        <br> 
+        <div class="cno">
+        Card number : <input type="text" name="card no"> </div>
+        <br>
+        <div class="sc">
+        Security code : <input type="text" name="security code"> </div>
+        <br> 
+        <div class="nc">
+        Name on card : <input type="text" name="name" placeholder="Exact name as on the card"></div>
+        <br>
+        <input type="button" name="button" value="BUY IT"> <br>
+        <br>
+    </form>
+    </div>
+    </center>
+</body>
+</html>

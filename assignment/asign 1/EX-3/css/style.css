@@ -1,0 +1,19 @@
+.container-fluid
+{
+    background-color: rgb(202, 219, 226);
+}
+.img
+{
+    width: 90%;
+    height: 90%;
+}
+#rating
+{
+    color: black;
+    font-size: larger;
+}
+.hr
+{
+    width: 100%;
+    border: solid 2px black;
+}
