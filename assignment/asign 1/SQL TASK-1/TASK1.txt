@@ -1,0 +1,167 @@
+    
+                                                                             SQL Task-1
+                                                                             ----------------
+ CREATE database task_1;     
+-------------------------------------
+
+TABLE :- Employee
+    
+create code:-    create table Employee
+                  (
+                     EM_ID int PRIMARY KEY AUTO_INCREMENT,
+                     FIRST_NAME varchar(255),
+                     LAST_NAME varchar(255),
+                     SALARY INT,
+                     JOINING_DATE date,
+                     DEPARTMENT varchar(255)
+                   );
+
+insert code:- insert into employee VALUES
+                    ('null','JOHN','ABRHAM','1000000','2013-01-01','BANKING'),
+                    ('null','MICHAL','CLERK','800000','2013-01-01','INSURANCE'),
+                    ('null','ROY','THOMAS','700000','2013-02-01','BANKING'),
+                    ('null','TOM','JOSE','600000','2013-02-01','INSURANCE'),
+                    ('null','JERRY','PINTO','650000','2013-01-01','INSURANCE'),
+                    ('null','PHILIP','MATHEW','750000','2013-01-01','SERVICES'),
+                    ('null','TESTNAME1','123','650000','2013-01-01','SERVICES'),
+                    ('null','TESTNAME2','LNAME%','600000','2013-02-01','INSURANCE');
+
+--------------------------------------------------------------------------------------------------------------------
+
+TABLE :- Incentives
+
+create code:-    create table Incentives
+                  (
+                     Incentives_id int PRIMARY KEY AUTO_INCREMENT,
+                     EMPLOYEE_REF_ID INT REFERENCES employee(EM_ID),
+                     INCENTIVE_DATE date,
+                     INCENTIVE_AMT INT
+                   );
+
+insert code:- insert into Incentives VALUES
+                    ('null','1','2013-02-01','5000'),
+                    ('null','2','2013-02-01','3000'),
+                    ('null','3','2013-02-01','4000'),
+                    ('null','1','2013-01-01','4500'),
+                    ('null','2','2013-01-01','3500');
+
+-----------------------------------------------------------------------------------------------------------------
+
+QUARIES:-
+----------------
+a) Get First_Name from employee table using alias name "EmployeeName".
+
+     code:-  alter table Employee CHANGE FIRST_NAME EmployeeName varchar(255);
+
+-----------------------------------------------------------------------------------------------------------------------------------
+                    
+b) Get FIRST_NAME,Joining year, Joining Month and Joining Date From employee table.
+
+   code:- select FIRST_NAME,JOINING_DATE from Employee;
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+c) Get all employee details from the employee table order by First Name Ascending And Salary Descending?
+
+  code:- select * from Employee order by FIRST_NAME asc,SALARY desc;
+
+----------------------------------------------------------------------------------------------------------------------
+
+d) Get employee details from employee table whose Firstname contains ,,o".
+
+  code:-  select * from Employee where FIRST_NAME like '%o%';
+
+----------------------------------------------------------------------------------------------------------------
+
+e) Get employee details from employee table whose joining month is "january" .
+
+  code:-select * from Employee where JOINING_DATE = '2013-01-01';
+
+-----------------------------------------------------------------------------------------------------------
+
+
+f) Get department, total salary with respect to a department from employee table order by total salary desending.
+
+  code:- select sum(SALARY),DEPARTMENT from Employee GROUP by department desc;
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+
+g) Get department wise maximum salary from employee table order by salary ascending?
+
+  code:- select max(salary),department from Employee GROUP by DEPARTMENT asc;
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+
+h) Select first_name, incentive amount from employee and incentives table for those Employees who have incentives and incentive amount greter than 3000
+
+ code:- SELECT incentives.*,FIRST_NAME FROM incentives JOIN employee on incentives.EMPLOYEE_REF_id=employee.EM_ID WHERE INCENTIVE_AMT>3000;
+
+----------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+i) select 2nd Highest salary from employee table.
+
+code:- select max(salary) from Employee where salary < (select max(salary) FROM Employee);
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+j) Select first_name, incentive amount from employee and incentives table for all Employees who incentives using left join.
+
+  code:- SELECT incentives.*,FIRST_NAME FROM incentives LEFT JOIN employee on incentives.EMPLOYEE_REF_id=employee.EM_ID;
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+k) Create View OF Employee table in which store first name,last name and salary only.
+  
+  code:- select FIRST_NAME,LAST_NAME,SALARY from Employee;
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+
+l) Create Procedure to find out department wise highest salary.
+
+   code:- select max(SALARY), DEPARTMENT from Employee GROUP by DEPARTMENT;
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     
