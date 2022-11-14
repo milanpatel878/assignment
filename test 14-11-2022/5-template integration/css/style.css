@@ -1,0 +1,20 @@
+.head
+{
+    padding: 20px;
+    background-color: blueviolet;
+}
+.nav
+{
+    padding: 20px;
+    background-color: royalblue;
+}
+.con
+{
+    padding: 80px;
+    background-color: yellow;
+}
+.foot
+{
+    padding: 40px;
+    background-color: green;
+}
