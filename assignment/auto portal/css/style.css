@@ -1,0 +1,124 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+.header
+{
+    margin-left: 4%;
+    margin-top: 1%;
+    background-color: white;
+    padding: 4px;
+}
+.bi-telephone
+{
+    padding: 3px;
+    margin-left: 30%;
+    color: blue ;
+    font-size: 32px;
+}
+.navbar
+{   
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color:  rgb(241, 124, 88) !important;
+}
+.navbar ul li
+{
+    display: inline-block;
+    padding: 5px 45px;
+    margin-top: 1%
+}
+.navbar a
+{
+    font-size: large;
+    color: white;
+    text-decoration: none;
+    list-style-type: none;   
+}
+.search
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 7px;
+    margin-left: 15%;
+}
+#log-btn
+{
+    width: 100px;
+    margin-left: 20%;
+    background-color: rgb(91, 91, 218) ;
+    color: white;
+}
+.modal-dialog
+{
+    max-width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 5%;
+}
+#btn-log
+{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    padding: 8px;
+    background-color: rgb(233, 68, 18);
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+}
+.email, .password
+{
+    border: none;
+    border-bottom: solid 2px lightblue;
+}
+#btn-log-register
+{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding: 8px;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+}
+#btn-log-reset
+{
+    width: 40%;
+    height: auto;
+    margin: auto;
+    padding: 8px;
+    background-color: orangered;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: none;
+    margin-left: 10%;
+}
+.footer
+{
+    width: 100%;
+    height: auto;
+}
+.footer li
+{
+    text-decoration: none;
+    list-style-type: none;
+}
+.footer a
+{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+.bord
+{
+    border-right: solid white 1px;
+}

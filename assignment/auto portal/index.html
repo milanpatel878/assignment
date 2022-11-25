@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>sellmycar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+ 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <!-- header start here -->
+
+    <div class="header">
+                <a href="#" class="logo"><img src="images/logo.png"> </a> 
+                 <b><span class="bi bi-telephone"> 1300 474 777 </span> </b> 
+    </div>
+     
+    <!-- navbar start here -->
+
+    <div class="navbar">
+        <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">HOW IT WORKS</a></li>
+            <li><a href="">WHAT TO BRING</a></li>
+            <li><a href="">COME TO YOU</a></li>
+            <li><a href="">ABOUT US</a></li>
+            <li><a href="">LOCATIONS</a></li>
+            <li><a href="">FAQ</a></li>
+        </ul>
+    </div>
+
+    <!--search bar -->
+    <br>
+    <div class="container-fluid search p-3 m-2">
+        <div class="row">
+        <div class="col-md-7">
+     <b> <input type="text" name="search" placeholder="Search cars or brands eg. swift,verna etc..." class="search"></b>
+     </div>
+        <div class="col-md-5">
+            <button type="button" class="btn btn-sm p-2" id="log-btn" data-bs-toggle="modal" data-bs-target="#login-load"> LOGIN </button>
+        </div>
+        </div> 
+        </div>
+
+    <!-- model craete here -->
+
+    <div class="modal fade" id="login-load" role="dialog">
+        <div class="modal-dialog">
+           <div class="modal-content">
+               <div class="row">
+                   <div class="col-md-5 bg-primary">
+                       <h1 class="text-white p-4">LOGIN</h1>
+                       <p class="text-white p-3"> GET BEST PRICE IN ANY BRANDS OF CAR, SO CREATE YOUR ACCOUNT IN SELLMYCAR !!</p><br>
+                       <p><img src="images/login.png" class="img-fluid"> </p>
+                   </div>
+                   <div class="col-md-7">
+                       <form method="post" class="p-2">
+                           <div class="form-group mt-5 p-2">
+                               <input type="text" name="email" placeholder="Enter Email/mobile number" required class="form-control email">
+                           </div>
+                           <div class="form-group mt-1 p-2">
+                               <input type="password" name="pass" placeholder="Enter Password" required class="form-control password">
+                               <p class="float-end mt-3"><a href="#">Forget password ?</a> </p>
+                           </div>
+                           <div class="form-group mt-5 p-3">
+                               <p> By continuing,you agree to sellmycar <a href="#">Terms of use and Privacy Policy. </a></p>
+                           </div>
+                           <div class="form-group mt-3 p-2">
+                               <input type="submit" name="login" id="btn-log" class="btn btn-sm" value="Login">
+                           </div>
+                           <div class="form-group mt-1 p-2">
+                               <p>Don't have an account <a href="register.html">Create your account ?</a> </p>
+                           </div>
+                          
+                       </form>
+                   </div>
+               </div>
+           </div>
+   </div>
+   </div>
+
+   <div class="line">
+    <hr>
+   </div>
+
+   <!-- content here -->
+
+   <div class="container-fluid content mt-3">
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card mt-2">
+        <div class="card-header bg-primary text-white">
+            <h4 class="p-2">NIKE SHOES <button type="button"
+            class="btn btn-sm btn-dark text-white float-end">View More </button> </h4>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N1.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Downshifter 11 R</h4>
+                        <p> SIZE : 7-10 <br>
+                            MRP : 8999 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N2.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nk Revoluation 6</h4>
+                        <p> SIZE : 6-10 <br>
+                            MRP : 6599 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+                <div class="col-md-4">
+                    <center>
+                        <img src="image/N3.jpg" class="img-fluid" style="width: 70%; height :220px:">
+                        <h4>nike Winflo 8 Running</h4>
+                        <p> SIZE : 9-10 <br>
+                            MRP : 3618 /- </p>
+                        <p><button type="button" class="btn btn-dark btn-sm">Add To Cart</button></p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   <!-- our stoty -->
+    <br>
+   <h4> Buy Certified Second Hand Cars in City </h4>
+   <p align="justify"> Do you want to buy second-hand cars in that are as good as new? If yes, then Maruti Suzuki SellMyCar is the place for you.</p>
+   
+  <h4>With a broad collection of used cars </h4> <p align="justify"> Maruti Suzuki is one of the most sought-after places to buy second-hand Maruti Suzuki cars. Maruti Suzuki Sell My Car outlets in Any City have a real-time inventory of well-maintained old cars in Any City. With Maruti Suzuki SellMyCar, you have the freedom to choose from a range of certified used cars. You can visit any of the nearest SellMyCar outlets to select a used car and book a test drive. Or, you can also buy a used car by visiting our official website or mobile application in just a few clicks.</p>
+   
+   <h4>At our Maruti Suzuki SellMyCar outlet, </h4> <p align="justify"> we offer used cars only after carrying out a thorough inspection based on 376 quality parameters. At our SellMyCar outlet, we try our best to offer the best of Maruti Suzuki to everyone and that is why we have a wide range of old Maruti Suzuki cars in that are in perfect condition. </p>
+   
+   <h4> Buy the Best Used Cars in at SellMyCar </h4>
+   <p align="justify">Our easy-to-navigate website and mobile application (both Android and iOS) make selling and buying used cars easier and simpler for our valued customers You can have a look at our collection of pre-owned cars and book a test drive from the comforts of your home Visit the nearest SellMyCar outlet by making use of the showroom locator, and buy a 2nd hand car of your choice </p>
+   
+  <h4>Top Reasons to Buy From Maruti Suzuki SellMyCar</h4>
+  <p align="justify"> Have The Entire Car History At our Maruti Suzuki SellMyCar outlet, we verify all the 2nd hand cars so that you have every essential information about the used car for sale such as the contact information of the previous owners, the year of manufacturing, how many kilometres driven, etc. It is our attempt to keep the transaction transparent for the people wanting to buy pre-owned cars. </p>
+   
+  <h4>The Quickest and Simplest Documentation Process </h4>
+  <p align="justify">With Maruti Suzuki SellMyCar, the documentation process for the second-hand car you are buying in is taken care of by our extremely dedicated relationship officer. </p>
+   
+   <h4> All The Cars Undergo Digital Evaluation </h4>
+   <p align="justify"> With our Maruti Suzuki SellMyCar outlet, you get to buy the best used cars. All our used cars for sale are evaluated on 376 quality parameters. From used budget cars to used luxury cars, we have a whole range of used Maruti Suzuki cars that are in excellent condition. </p>
+   
+   <h4> Buy second-hand cars hassle-freely </h4>
+   <p align="justify">The best part about buying 2nd hand cars from Maruti Suzuki SellMyCar is the ease of buying. With a user-friendly website and smartphone application, buyers can choose, book a test drive, and buy a second-hand car of their choice without any hassle.</p>
+   
+   <h4> Experience Convenience & Transparency at Every SellMyCar Showroom</h4>
+   <p align="justify"> A Broad Selection of Certified Second-Hand Cars When you choose Maruti Suzuki SellMyCar, you will be spoilt for choice. We have a comprehensive range of used cars 2nd hand cars. You can either visit the showroom, to check out all the used cars available for sale. or you can browse through the online catalogue on our website and mobile app. Moreover, you get a warranty of 6 months to 1 year and 3 free services. </p>
+   
+   <h4> Scan The QR Code To Know All About A Car </h4>
+   <p align="justify"> Now with the SellMyCar mobile app, you can scan the QR Code available at all the Maruti Suzuki SellMyCar outlets and get all the important details about the car you wish to buy. Buying a pre-owned car in could not get any better. </p>
+   
+   <h4> A dedicated Relationship Officer at Your Service </h4>
+   <p align="justify"> When you are buying a second-hand car in ., you will be assigned a dedicated relationship officer so that your car-buying experience becomes all the better. You will have all the assistance you need. Choose Maruti Suzuki SellMyCar for a simpler and better experience. </p>
+   
+   <h4> Everything Under One Roof </h4>
+  <p align="justify"> With Maruti Suzuki SellMyCar, you have the option of buying more than just a used car. Get Maruti Suzuki genuine accessories, genuine parts, finance and insurance options, etc. </p>
+   
+   <h4> Note </h4> <p align="justify"> Warranty and Free Services may vary from one certified pre-owned car to another.</p>
+   <hr>
+
+   <!--footer-->
+
+<div class="container-fluid footer bg-dark text-white p-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="footer">
+                        <li><a href="#" class="text-secondary">ABOUT</a> </li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">SagarShoes Stories</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">SagarShoes Wholesale</a></li>
+                        <li><a href="#">Corporate Information</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer">
+                        <li><a href="#" class="text-secondary">HELP</a> </li>
+                        <li><a href="#">Payments</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Cancellation & Returns</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Report Infringement</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul class="footer">
+                        <li><a href="#" class="text-secondary">POLICY</a> </li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">Terms Of Use</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Sitmap</a></li>
+                        <li><a href="#">EPR Compliance</a></li>
+                   </ul>
+                </div>
+                <div class="col-md-3 bord">
+                    <ul class="footer">
+                        <li><a href="#" class="text-secondary">SOCIAL</a> </li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Whatsapp</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-6">
+                    <b class="text-secondary">Mail Us</b>
+                    <p class="text-white">Sell My Car,<br>
+                        Rameswar Co <br>
+                        Near Jithariya Hanuman Temple, <br>
+                        Mavadi Main Road, Rajkot, <br>
+                        Rajkot , 360004 <br>
+                        Gujarat, India  </p>
+                </div>
+                <div class="col-md-6">
+                    <b class="text-secondary">Registered Office Address :</b>
+                    <p class="text-white">Sagar Shoes Private Limited,<br>
+                        Rameswar Complex , <br>
+                        Near Jithariya Hanuman Temple, <br>
+                        Mavadi Main Road, Rajkot, <br>
+                        Rajkot , 360004 <br>
+                        Gujarat, India <br>
+                        CIN : U51109KS2012PTC066107 <br>
+                        TelePhone No : 8980110081 <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <p class="text-center"><span class="text-success bi bi-gift"> </span> become a seller &nbsp; &nbsp; &nbsp;<span class="text-success bi bi-gift"></span> Advertise &nbsp; &nbsp; &nbsp;<span class="text-success bi bi-gift"> </span> Help Center  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @2022 Sagar Shoes All Right Reserved &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; <img src="images/payment.svg"> </p>
+    
+    </div>
+    
+</body>
+</html>
